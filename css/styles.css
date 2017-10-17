@@ -21,7 +21,7 @@ body {
   margin: 0 auto;
   max-width: 75%;
   padding-top: 20%;
-  padding-top: 42vh;
+  padding-top: 38vh;
   text-align: center;
 }
 
@@ -31,12 +31,19 @@ body {
   text-decoration: none;
 }
 
+#search-icon {
+  cursor: pointer;
+  top: 15px;
+  position: relative;
+}
+
 #search-input {
   background: #092B40;
   border: 3px solid #D96F32;
   border-radius: 20px;
+  display: none;
   color: #FFF;
-  margin: 1.5rem 0;
+  margin: 1.1rem 0 1.5rem 0;
   padding: 0.7rem 0;
   padding-left: 1.1rem;               /* Move cursor to the left */
   outline: none;                      /* outline-color outline-style outline-width */
