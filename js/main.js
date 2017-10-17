@@ -6,12 +6,26 @@ $(document).ready(function() {
 
   $searchIcon.on('click', function() {
     $searchIcon.hide();
-    $inputWrapper.show();
+    $inputWrapper.toggleClass('hidden').animate({
+        width: '240px',
+      },
+      1000,
+      function() {
+        $searchInput.focus();
+      }
+    );
   });
 
   $closeIcon.on('click', function() {
-    $inputWrapper.hide();
-    $searchIcon.show();
+    $inputWrapper.animate({
+        width: '30px'
+      },
+      1000,
+      function() {
+        $inputWrapper.toggleClass('hidden');
+        $searchIcon.show();
+      }
+    );
   });
 
 });

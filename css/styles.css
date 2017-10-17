@@ -21,7 +21,8 @@ body {
   margin: 0 auto;
   max-width: 75%;
   padding-top: 20%;
-  padding-top: 38vh;
+  padding-top: 35vh;
+  position: relative;
   text-align: center;
 }
 
@@ -33,17 +34,20 @@ body {
 
 #search-icon {
   cursor: pointer;
-  margin-bottom: 0.8rem;
-  top: 15px;
-  position: relative;
+  position: absolute;
+  -moz-transform: translate(-50%, 94%);
+  -ms-transform: translate(-50%, 94%);
+  -o-transform: translate(-50%, 94%);
+  -webkit-transform: translate(-50%, 94%);
+  transform: translate(-50%, 94%);
 }
 
 #input-wrapper {
   border: 3px solid #D96F32;
   border-radius: 20px;
-  display: none;
   color: #FFF;
-  margin: 1.2rem auto;
+  height: 2.7rem;
+  margin: 1.8rem auto;
   width: 15rem;
 }
 
@@ -72,6 +76,10 @@ body {
   width: 20px;
 }
 
-.containe > p {
-  font-size: 1.2rem;
+.container > p {
+  font-size: 1.1rem;
+}
+
+.hidden {
+  visibility: hidden;                 /* Hides the element, however the element will still take up the same space as before. The element will be hidden, but still affect the layout */
 }
