@@ -1,10 +1,17 @@
 $(document).ready(function() {
-  var $searchIcon = $('#search-icon');
-  var $searchInput = $('#search-input');
+  var $closeIcon = $('#close-icon'),
+      $inputWrapper = $('#input-wrapper');
+      $searchIcon = $('#search-icon'),
+      $searchInput = $('#search-input');
 
   $searchIcon.on('click', function() {
     $searchIcon.hide();
-    $searchInput.show();
+    $inputWrapper.show();
+  });
+
+  $closeIcon.on('click', function() {
+    $inputWrapper.hide();
+    $searchIcon.show();
   });
 
 });
